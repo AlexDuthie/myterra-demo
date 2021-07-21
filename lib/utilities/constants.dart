@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 // Screens
+const Color defaultBackgroundColour = Color.fromRGBO(206, 234, 226, 1.0);
 const double backgroundSize = double.infinity;
 const EdgeInsets screensBackground = EdgeInsets.only(
     left: 8,
@@ -9,17 +10,19 @@ const EdgeInsets screensBackground = EdgeInsets.only(
     bottom: 8,
 );
 const backgroundDecoration = BoxDecoration(
-  color: Color.fromRGBO(168, 168, 168, 1.0),
+  color: Color.fromRGBO(206, 234, 226, 1.0),
   borderRadius: BorderRadius.all(
     Radius.circular(5),
   ),
 );
 
 // Main AppBar
-const Color appBarColor = Colors.blue;
+const Color appBarColor = Color.fromRGBO(33, 151, 114, 1.0);
 
 // SideBar
-const Color sideAppBarColor = Color.fromRGBO(34, 149, 242, 1.0);
+const Color sideBarBackgroundColor = Color.fromRGBO(206, 234, 226, 1.0);
+const Color sideBarInfoBackgroundColour = Color.fromRGBO(26, 108, 83, 1.0);
+const Color sideAppBarColor = Color.fromRGBO(33, 151, 114, 1.0);
 const double sideAppBarHeight = 55;
 const EdgeInsets sideAppBarMargin = EdgeInsets.only(bottom: 8);
 const BoxDecoration sideBarDecoration = BoxDecoration(
@@ -30,6 +33,7 @@ const BoxDecoration sideBarDecoration = BoxDecoration(
 const TextStyle sideBarMenuTextStyle = TextStyle(
   fontSize: 20,
   fontWeight: FontWeight.w400,
+  color: Colors.white,
 );
 const EdgeInsets sideBarMenuMargin = EdgeInsets.only(
   top: 3,
@@ -69,29 +73,33 @@ const EdgeInsets productCardMargin = EdgeInsets.all(
 );
 const double productCardHeight = 180;
 const productCardBoxDecoration = BoxDecoration(
-  color: Color(0xffd3d3d3),
+  color: Color.fromRGBO(26, 108, 83, 1.0),
   borderRadius: BorderRadius.all(
     Radius.circular(10),
   ),
 );
 const productCardImageDecoration = BoxDecoration(
-  color: Colors.grey,
+  color: Color.fromRGBO(47,72,88,1),
   borderRadius: BorderRadius.all(
     Radius.circular(20),
   ),
 );
 const double cardImageHeight = 140;
 const double cardImageWidth = 140;
+const cardButtonColour = Color.fromRGBO(0,56,59, 1.0);
 
 // Card Rating
-const Color ratingStarColor = Colors.orange;
+const Color ratingStarColor = Color.fromRGBO(93, 255, 231, 1.0);
 const double ratingStarSize = 23;
 const TextStyle cardHeaderStyle = TextStyle(
   fontSize: 20,
-  fontWeight: FontWeight.w700,
+  fontWeight: FontWeight.w500,
+  color: Colors.white,
 );
 const TextStyle cardSubHeaderStyle = TextStyle(
+  fontWeight: FontWeight.w400,
   fontSize: 13,
+  color: Colors.white,
 );
 
 // TextBuilder
@@ -99,6 +107,9 @@ const TextStyle cardSubHeaderStyle = TextStyle(
 const TextStyle textBuilderTextStyle = TextStyle(
   fontSize: 20,
   fontWeight: FontWeight.w400,
+  color: Colors.white,
+  decoration: TextDecoration.underline,
+  decorationColor: Colors.white,
 );
 const EdgeInsets textBuilderContainerMargin = EdgeInsets.only(
   top: 2.5,
@@ -106,7 +117,3 @@ const EdgeInsets textBuilderContainerMargin = EdgeInsets.only(
 );
 const double textBuilderHeight = 30;
 const double textBuilderWidth = double.infinity;
-
-// Basket Screen
-
-const double basketItemHeight = 120;

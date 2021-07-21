@@ -14,4 +14,3 @@ export 'product_card/card_button.dart';
 export 'product_card/card_titles.dart';
 export 'loading_circle.dart';
 export 'package:mobile_app/components/sidebar/sidebar_text_builder.dart';
-export 'product_card/cart_item.dart';
