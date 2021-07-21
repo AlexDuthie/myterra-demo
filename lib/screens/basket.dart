@@ -28,11 +28,6 @@ class _BasketScreenState extends State<BasketScreen> {
         title: Text('Cart Screen | In Development'),
         centerTitle: true,
       ),
-      body: CustomScrollView(
-        slivers: [
-          BasketItem()
-        ],
-      ),
     );
   }
 }
