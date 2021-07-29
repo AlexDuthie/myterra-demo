@@ -5,6 +5,10 @@
 1. [Short Description](#the-short-description)
 1. [Long Description](#the-long-description)
 1. [Project Tools](#project-tools)
+1. [Platform Roadmap](#platform-roadmap)
+1. [Video Demonstration](#visual-demonstration)
+1. [Setup](#application-setup)
+1. [Contributors](#contributors)
 
 ## The Short Description
 
