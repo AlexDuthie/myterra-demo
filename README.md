@@ -12,9 +12,9 @@
 
 ## The Short Description
 
-> We all know what we should be doing to help better our environment, that doesn't mean we all know how.
-
 Encouraging **Eco-Friendly** alternatives, one **Click** at a time.
+
+> We all know what we should be doing to help better our environment, that doesn't mean we all know how.
 
 > [Back to Contents](#contents)
 
