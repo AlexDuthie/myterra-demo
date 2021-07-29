@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:mobile_app/utilities/data/products.dart';
 import 'package:mobile_app/models/index.dart';
 import 'package:mobile_app/utilities/index.dart';
 import 'package:mobile_app/components/index.dart';
@@ -11,7 +12,7 @@ class ProductCard extends StatefulWidget {
 
 class _ProductCardState extends State<ProductCard> {
   List<Category> categories = Categories.getMethodCategories();
-  List<Product> products = Products.getProducts();
+  List<Product> products = new List<ProductModel>();
   bool _loadingCheck = true;
   String rating = 'A';
 
@@ -22,6 +23,9 @@ class _ProductCardState extends State<ProductCard> {
   }
 
   getProducts() async {
+    Products productClass = Products();
+    await productClass.getProducts();
+    products = productClass.product;
     Future.delayed(const Duration(milliseconds: 2500), () {
       setState(() {
         _loadingCheck = false;
