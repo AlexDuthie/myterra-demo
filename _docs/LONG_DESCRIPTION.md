@@ -19,7 +19,7 @@ We all know what we **should** be doing to help better our environment, that doe
 
 Problems Caused by this:
 
-* The rise of **Global Pollution** due to Delivery Distances
+* The rise of **Global Pollution** due to long **Delivery Distances**
 * Products being bought online when **Local Businesses** may have similar or better alternatives
 * Confusing energy information preventing more **Energy Efficient** products being used
 
