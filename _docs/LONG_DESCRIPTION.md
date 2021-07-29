@@ -4,7 +4,7 @@
 
 1. [The Problem](#the-problem)
 1. [The Solution](#the-solution)
-1. [How It Works?](#how-it-works)
+1. [How It Works](#how-it-works)
 
 ## The Problem
 
@@ -37,7 +37,7 @@ The aim is to:
 * Show users how **damaging** to our planet one choice can be vs a more **Eco-alternative choice**
 * Encourage Eco-awareness through the use of **leaderboards** and **scores** to show off your impact on saving our Planet!
 
-## How It Works?
+## How It Works
 
 
 
