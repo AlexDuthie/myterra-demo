@@ -9,7 +9,9 @@
 
 ## The Problem
 
-Hundreds of millions of people order products online each year, this is a huge factor in the use of our Natural Resources. We are told to be more **Eco-Aware** and **Eco-Friendly** in our day-to-day life but not really told how. We all know what we **should** be doing to help better our environment, that doesn't mean we all know **how**. It can be a struggle when trying to adjust your lifestyle to help save our planet's Ecosystem.
+Hundreds of millions of people order products online each year, this is a huge factor in the use of our **Natural Resources**. We are told to be more **Eco-Aware** and **Eco-Friendly** in our day-to-day life but not really told how. 
+
+We all know what we **should** be doing to help better our environment, that doesn't mean we all know **how**. It can be a struggle when trying to adjust your lifestyle to help save our planet's Ecosystem.
 
 This may be the Root Cause to Problems such as:
 
