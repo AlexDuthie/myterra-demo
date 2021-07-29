@@ -5,7 +5,7 @@ import 'package:http/http.dart' as http;
 class Products {
   List<Product> product = [];
 
-  Future<void> getProducts() async {
+  /*static*/ Future<void> getProducts() async {
 
     String APIurl = "https://f758ae82.eu-gb.apigw.appdomain.cloud/productslist";
 

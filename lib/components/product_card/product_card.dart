@@ -12,7 +12,7 @@ class ProductCard extends StatefulWidget {
 
 class _ProductCardState extends State<ProductCard> {
   List<Category> categories = Categories.getMethodCategories();
-  List<Product> products = new List<ProductModel>();
+  List<Product> products = Products.getProducts() as List<Product>;
   bool _loadingCheck = true;
   String rating = 'A';
 
