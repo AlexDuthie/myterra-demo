@@ -57,7 +57,7 @@ In collaboration with **Google's Flutter Framework**, **EPREL** and countless **
 
 **Google's Flutter** allows us to deploy our application to **Android**, **Windows** and **iOS** in 1/2 the development time. MyTerra's comparison system could also be used within a browser extension too by comparing products when browsing online.
 
-### Main Goal
+### Goal
 
 The main goal is to simplify the understanding of energy consumption rates AND to encourage Eco-awareness by making it **fun**.
 
