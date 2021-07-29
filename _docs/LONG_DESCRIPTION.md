@@ -6,9 +6,9 @@
 1. [The Solution](#the-solution)
 1. [How It Works?](#how-it-works)
 
-> We all know what we should be doing to help better our environment, that doesn't mean we all know how.
-
 ## The Problem
+
+> We all know what we should be doing to help better our environment, that doesn't mean we all know how.
 
 Hundreds of millions of people order products online each year, this is a huge factor in the use of our **Natural Resources**.
 
