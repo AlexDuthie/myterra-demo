@@ -5,7 +5,9 @@
 1. [The Problem](#the-problem)
 1. [The Solution](#the-solution)
 1. [How It Works](#how-it-works)
-1. [The Goal](#the-goal)
+    1. [Scalability](#scalability)
+    1. [Main Goal](#main-goal)
+1. [Contributors](#contributors)
 
 ## The Problem
 
@@ -51,9 +53,11 @@ In collaboration with **Google's Flutter Framework**, **EPREL** and countless **
 
 > Saving the planet is going to take a lot of work, so why not have fun while you do it!
 
+### Scalability
+
 **Google's Flutter** allows us to deploy our application to **Android**, **Windows** and **iOS** in 1/2 the development time. MyTerra's comparison system could also be used within a browser extension too by comparing products when browsing online.
 
-### The Goal
+### Main Goal
 
 The main goal is to simplify the understanding of energy consumption rates AND to encourage Eco-awareness by making it **fun**.
 
