@@ -20,7 +20,7 @@ Encouraging **Eco-Friendly** alternatives, one **Click** at a time.
 
 ## The Long Description
 
-Click [Here]() to See
+Click [Here](_docs/LONG_DESCRIPTION.md) to See
 
 > [Back to Contents](#contents)
 
