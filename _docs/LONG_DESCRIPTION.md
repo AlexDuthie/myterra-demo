@@ -1,6 +1,6 @@
 # MyTerra | Long Description
 
-> [Back to README](#../README.md)
+> [Back to README](../README.md)
 
 ## Contents
 
