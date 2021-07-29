@@ -1,5 +1,7 @@
 # MyTerra | Long Description
 
+> [Back to README](#../README.md)
+
 ## Contents
 
 1. [The Problem](#the-problem)
@@ -23,6 +25,8 @@ Problems Caused by this:
 * Products being bought online when **Local Businesses** may have similar or better alternatives
 * Confusing energy information preventing more **Energy Efficient** products being used
 
+> [Back to Contents](#contents)
+
 ## The Solution
 
 > MyTerra's aim is to make saving our environment an easier and more enjoyable experience.
@@ -40,6 +44,8 @@ The aim is to:
 * Show users how **damaging** to our planet one choice can be vs a more **Eco-alternative choice**
 * Encourage Eco-awareness through the use of **leaderboards** and **scores** to show off your impact on saving our Planet!
 
+> [Back to Contents](#contents)
+
 ## How It Works
 
 In collaboration with **Google's Flutter Framework**, **EPREL** and countless **IBM Cloud Services**. We can deploy a cross-platform application that could in time:
@@ -53,9 +59,13 @@ In collaboration with **Google's Flutter Framework**, **EPREL** and countless **
 
 > Saving the planet is going to take a lot of work, so why not have fun while you do it!
 
+> [Back to Contents](#contents)
+
 ### Scalability
 
 **Google's Flutter** allows us to deploy our application to **Android**, **Windows** and **iOS** in 1/2 the development time. MyTerra's comparison system could also be used within a browser extension too by comparing products when browsing online.
+
+> [Back to Contents](#contents)
 
 ### Goal
 
@@ -63,7 +73,11 @@ The main goal is to simplify the understanding of energy consumption rates AND t
 
 **EPREL** is going to be a huge database that stores energy consumption rates from products all across Europe. We believe that we could achieve a similar approach by using **IBM's Db2** and other **IBM services**. The same data could be stored in time, but on a larger scale.
 
+> [Back to Contents](#contents)
+
 ## Contributors
 
 * **Alex Duthie** | <a href="https://www.linkedin.com/in/alexduthielnkdn/">Linkedin</a>
 * **Andrew Ellen** | <a href="https://github.com/AndrewEllen">GitHub</a>
+
+> [Back to Contents](#contents)
