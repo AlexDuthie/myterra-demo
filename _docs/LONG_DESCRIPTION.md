@@ -9,15 +9,15 @@
 
 ## The Problem
 
-Hundreds of millions of people order products online each year, this is a huge factor in the use of our **Natural Resources**. We are told to be more **Eco-Aware** and **Eco-Friendly** in our day-to-day life but not really told how. 
+Hundreds of millions of people order products online each year, this is a huge factor in the use of our **Natural Resources**.
 
 We all know what we **should** be doing to help better our environment, that doesn't mean we all know **how**. It can be a struggle when trying to adjust your lifestyle to help save our planet's Ecosystem.
 
-This may be the Root Cause to Problems such as:
+Problems Caused by this:
 
 * The rise of **Global Pollution** due to Delivery Distances
-* Products being bought online when **Local Businesses** may supply the same
-* Complicated energy information preventing more **Energy Efficient** products being used
+* Products being bought online when **Local Businesses** may have similar or better alternatives
+* Confusing energy information preventing more **Energy Efficient** products being used
 
 ## Our Solution
 
