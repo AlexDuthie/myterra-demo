@@ -61,5 +61,5 @@ The main goal is to simplify the understanding of energy consumption rates AND t
 
 ## Contributors
 
-* Alex Duthie
-* Andrew Ellen
+* **Alex Duthie** | <a href="https://www.linkedin.com/in/alexduthielnkdn/">Linkedin</a>
+* **Andrew Ellen** | <a href="https://github.com/AndrewEllen">GitHub</a>
