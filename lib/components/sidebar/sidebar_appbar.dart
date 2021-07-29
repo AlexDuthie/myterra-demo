@@ -31,15 +31,17 @@ class SideAppBar extends StatelessWidget {
               },
             child: RichText(
               text: TextSpan(
-                text: "Terra",
-                style: TextStyle(
-                  fontWeight: FontWeight.bold,
-                  fontSize: 30,
-                  color: Color.fromRGBO(2, 7, 1, 1.0),
-                ),
                 children: <TextSpan>[
                   TextSpan(
-                    text: "Care",
+                    text: "My",
+                    style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                      fontSize: 30,
+                      color: Color.fromRGBO(2, 7, 1, 1.0),
+                    ),
+                  ),
+                  TextSpan(
+                    text: "Terra",
                     style: TextStyle(
                       fontWeight: FontWeight.bold,
                       fontSize: 30,

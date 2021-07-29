@@ -5,19 +5,19 @@ class SideBarHelp {
     return [
       SideBarText(
         settingsText: "Theme Settings",
-        textLink: "",
+        textLink: "/Theme",
       ),
       SideBarText(
         settingsText: "Notification Settings",
-        textLink: "",
+        textLink: "/Notification",
       ),
       SideBarText(
         settingsText: "FAQ",
-        textLink: "",
+        textLink: "/FAQ",
       ),
       SideBarText(
         settingsText: "Contact Us",
-        textLink: "",
+        textLink: "/Contact",
       ),
     ];
   }

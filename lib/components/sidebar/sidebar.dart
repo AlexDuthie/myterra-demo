@@ -22,6 +22,7 @@ class _MainSideBarState extends State<MainSideBar> {
   Widget build(BuildContext context) {
     return Drawer(
       child: Scaffold(
+        backgroundColor: sideBarBackgroundColor,
         body: Column(
           children: <Widget>[
             SideAppBar(),

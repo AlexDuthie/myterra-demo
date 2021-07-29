@@ -1,18 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:mobile_app/components/index.dart';
-import 'package:mobile_app/utilities/index.dart';
-import 'package:mobile_app/models/index.dart';
 
-class BasketScreen extends StatefulWidget {
-  const BasketScreen({Key? key}) : super(key: key);
+//TODO: Design UI for this screen
+
+class CartScreen extends StatefulWidget {
+  const CartScreen({Key? key}) : super(key: key);
 
   @override
-  _BasketScreenState createState() => _BasketScreenState();
+  _CartScreenState createState() => _CartScreenState();
 }
 
-class _BasketScreenState extends State<BasketScreen> {
-  List<Product> products = Products.getProducts();
-
+class _CartScreenState extends State<CartScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -25,8 +23,12 @@ class _BasketScreenState extends State<BasketScreen> {
           },
           icon: Icon(Icons.keyboard_return),
         ),
-        title: Text('Cart Screen | In Development'),
-        centerTitle: true,
+      ),
+      //TODO: Screen will eventually show contents of basket
+      body: CustomScrollView(
+        slivers: [
+          ProductCard(),
+        ],
       ),
     );
   }

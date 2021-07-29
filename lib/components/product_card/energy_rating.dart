@@ -5,15 +5,13 @@ class BulbRating extends StatelessWidget {
 
   final String bulbRating;
 
-  //TODO: Create Method to change Icon color depending on rating
-
   @override
   Widget build(BuildContext context) {
     return Stack(
       //TODO: replace with custom bulb images
       alignment: Alignment.center,
       children: [
-        Icon(Icons.lightbulb, size: 50, color: Colors.green,),
+        Icon(Icons.lightbulb, size: 50),
         Padding(
           padding: const EdgeInsets.only(bottom: 12.0),
           child: Text(

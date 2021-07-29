@@ -10,6 +10,12 @@ class SideBarMenu extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
+      padding: EdgeInsets.only(top: 10),
+      margin: EdgeInsets.all(10),
+      decoration: BoxDecoration(
+        borderRadius: BorderRadius.all(Radius.circular(10)),
+        color: sideBarInfoBackgroundColour,
+      ),
       child: Column(
         children: <Widget>[
           Container(

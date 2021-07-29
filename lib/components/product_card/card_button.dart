@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:mobile_app/utilities/index.dart';
 
 class CardButton extends StatelessWidget {
 
@@ -10,12 +11,10 @@ class CardButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ClipRRect(
-      borderRadius: BorderRadius.only(
-          topRight: Radius.circular(10),
-          bottomRight: Radius.circular(10)),
+      borderRadius: BorderRadius.all(Radius.circular(10)),
       child: Container(
         margin: EdgeInsets.only(bottom: 1),
-        color: Colors.grey,
+        color: cardButtonColour,
         width: 120,
         child: TextButton(
           onPressed: () {

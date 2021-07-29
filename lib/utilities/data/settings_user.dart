@@ -17,7 +17,7 @@ class SideBarUser {
       ),
       SideBarText(
         settingsText: "View Profile",
-        textLink: "",
+        textLink: "/Profile",
       ),
       SideBarText(
         settingsText: "View Favourites",
@@ -25,7 +25,7 @@ class SideBarUser {
       ),
       SideBarText(
         settingsText: "Profile Settings",
-        textLink: "",
+        textLink: "/ProfileSettings",
       ),
     ];
   }
