@@ -5,6 +5,7 @@
 1. [The Problem](#the-problem)
 1. [The Solution](#the-solution)
 1. [How It Works](#how-it-works)
+1. [The Goal](#the-goal)
 
 ## The Problem
 
@@ -39,7 +40,24 @@ The aim is to:
 
 ### How It Works
 
+In collaboration with **Google's Flutter Framework**, **EPREL** and countless **IBM Cloud Services**. We can deploy a cross-platform application that could in time:
 
+* Compare products via their energy consumption rates
+    * **IBM Watson** could be used to determine delivery distance, energy consumption etc.
+    * Energy data would be provided by the **EPREL** database and possibly stored inside an **IBM Db2** instance
+* Have continuous development with **IBM's CI/CD Delivery Pipelines**
+* Allow users to gain **TerraPoints** to rank up on our **Eco-Board** to display how energy efficient and Eco-aware they have been while using **MyTerra**
+* **Educate** users with articles and videos on our **Planet's** current **Ecosystem** which would also provide **TerraPoints**
+
+> Saving the planet is going to take a lot of work, so why not have fun while you do it!
+
+**Google's Flutter** allows us to deploy our application to **Android**, **Windows** and **iOS** in 1/2 the development time. MyTerra's comparison system could also be used within a browser extension too by comparing products when browsing online.
+
+### The Goal
+
+The main goal is to simplify the understanding of energy consumption rates AND to encourage Eco-awareness by making it **fun**.
+
+**EPREL** is going to be a huge database that stores energy consumption rates from products all across Europe. We believe that we could achieve a similar approach by using **IBM's Db2** and other **IBM services**. The same data could be stored in time, but on a larger scale.
 
 ## Contributors
 
