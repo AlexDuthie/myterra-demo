@@ -40,7 +40,7 @@ The aim is to:
 * Show users how **damaging** to our planet one choice can be vs a more **Eco-alternative choice**
 * Encourage Eco-awareness through the use of **leaderboards** and **scores** to show off your impact on saving our Planet!
 
-### How It Works
+## How It Works
 
 In collaboration with **Google's Flutter Framework**, **EPREL** and countless **IBM Cloud Services**. We can deploy a cross-platform application that could in time:
 
