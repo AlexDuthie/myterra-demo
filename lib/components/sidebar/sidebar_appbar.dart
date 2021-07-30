@@ -8,17 +8,27 @@ class SideAppBar extends StatelessWidget implements PreferredSizeWidget{
   @override
   Widget build(BuildContext context) {
     return AppBar(
-      title: Row(
-        children: [
-          Text(
-            "My",
-            style: TextStyle(color: Colors.greenAccent, fontSize: 40.0),
-          ),
-          Text(
-            "Terra",
-            style: TextStyle(color: Colors.lightGreenAccent, fontSize: 40.0),
-          ),
-        ],
+      title: RichText(
+        text: TextSpan(
+          children: <TextSpan>[
+            TextSpan(
+              text: "My",
+              style: TextStyle(
+                fontWeight: FontWeight.bold,
+                fontSize: 30,
+                color: Color.fromRGBO(2, 7, 1, 1.0),
+              ),
+            ),
+            TextSpan(
+              text: "Terra",
+              style: TextStyle(
+                fontWeight: FontWeight.bold,
+                fontSize: 30,
+                color: Color.fromRGBO(77, 227, 55, 1.0),
+              ),
+            ),
+          ],
+        ),
       ),
       automaticallyImplyLeading: false,
       backgroundColor: sideAppBarColor,
