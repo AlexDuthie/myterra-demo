@@ -52,11 +52,7 @@ class _ProductCardState extends State<ProductCard> {
                         Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
-                            CardTitles(
-                              header: 'Product Name',
-                              subHeader: 'Company/ Org',
-                              style: cardHeaderStyle,
-                            ),
+                            CardTitles(),
                             CardRating(),
                             SizedBox(height: 4),
                             CardButton(label: 'add to basket', onPressed: (){

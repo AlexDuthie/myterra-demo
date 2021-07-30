@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:mobile_app/utilities/constants.dart';
-import 'package:mobile_app/screens/index.dart';
 
 // ignore: must_be_immutable
 class Basket extends StatefulWidget {
@@ -18,12 +17,9 @@ class _BasketState extends State<Basket> {
   Widget build(BuildContext context) {
     return TextButton(
       onPressed: () {
-        Navigator.push(
-          context,
-          MaterialPageRoute(
-            builder: (context) => BasketScreen(),
-          ),
-        );
+        setState(() {
+          widget.basketCount++;
+        });
       },
       child: Row(
         crossAxisAlignment: CrossAxisAlignment.start,
