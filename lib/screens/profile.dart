@@ -20,11 +20,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
           margin: screensBackground,
           width: backgroundSize,
           height: backgroundSize,
-          child: CustomScrollView(
-            slivers: [
-              ProductCard(),
-            ],
-          ),
+          child: Text("This is the Profile"),
         ),
       ),
     );
