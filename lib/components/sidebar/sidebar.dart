@@ -22,19 +22,22 @@ class _MainSideBarState extends State<MainSideBar> {
   Widget build(BuildContext context) {
     return Drawer(
       child: Scaffold(
+        appBar: SideAppBar(),
         backgroundColor: sideBarBackgroundColor,
-        body: Column(
-          children: <Widget>[
-            SideAppBar(),
-            SideBarMenu(
-              containerTitle: "User Settings",
-              sideBarText: userSettings,
-            ),
-            SideBarMenu(
-              containerTitle: "App Settings and Help",
-              sideBarText: appSettings,
-            ),
-          ],
+        body: SingleChildScrollView(
+          scrollDirection: Axis.vertical,
+          child: Column(
+            children: <Widget>[
+              SideBarMenu(
+                containerTitle: "User Settings",
+                sideBarText: userSettings,
+              ),
+              SideBarMenu(
+                containerTitle: "App Settings and Help",
+                sideBarText: appSettings,
+              ),
+            ],
+          ),
         ),
       ),
     );

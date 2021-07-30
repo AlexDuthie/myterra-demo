@@ -1,60 +1,28 @@
 import 'package:flutter/material.dart';
+import 'package:mobile_app/components/buttons/menu_button.dart';
 import 'package:mobile_app/utilities/index.dart';
-import 'package:mobile_app/components/index.dart';
 
-class SideAppBar extends StatelessWidget {
+class SideAppBar extends StatelessWidget implements PreferredSizeWidget{
+  final Size preferredSize = Size.fromHeight(sideAppBarHeight);
+
   @override
   Widget build(BuildContext context) {
-    return Container(
-      margin: sideAppBarMargin,
-      height: sideAppBarHeight,
-      width: double.infinity,
-      decoration: sideBarDecoration,
-      child: Stack(
-        children: <Widget>[
-          Container(
-            margin: const EdgeInsets.only(
-              right: 5,
-              bottom: 2,
-            ),
-            child: Align(
-              alignment: Alignment.centerRight,
-              child: MenuIconButton(
-                onPressed: () => Navigator.of(context).pop(),
-              )
-            ),
+    return AppBar(
+      title: Row(
+        children: [
+          Text(
+            "My",
+            style: TextStyle(color: Colors.greenAccent, fontSize: 40.0),
           ),
-          Center(
-            child: GestureDetector(
-              onTap: () {
-                Navigator.pushNamed(context, '/Home');
-              },
-            child: RichText(
-              text: TextSpan(
-                children: <TextSpan>[
-                  TextSpan(
-                    text: "My",
-                    style: TextStyle(
-                      fontWeight: FontWeight.bold,
-                      fontSize: 30,
-                      color: Color.fromRGBO(2, 7, 1, 1.0),
-                    ),
-                  ),
-                  TextSpan(
-                    text: "Terra",
-                    style: TextStyle(
-                      fontWeight: FontWeight.bold,
-                      fontSize: 30,
-                      color: Color.fromRGBO(77, 227, 55, 1.0),
-                    ),
-                  ),
-                ],
-              ),
-            ),
-          ),
+          Text(
+            "Terra",
+            style: TextStyle(color: Colors.lightGreenAccent, fontSize: 40.0),
           ),
         ],
       ),
+      automaticallyImplyLeading: false,
+      backgroundColor: sideAppBarColor,
+      actions: [MenuIconButton(onPressed: () {})],
     );
   }
 }
