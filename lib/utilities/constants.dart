@@ -44,7 +44,7 @@ const EdgeInsets sideBarMenuMargin = EdgeInsets.only(
 
 // Search Bar
 const InputDecoration searchBarDecoration = InputDecoration(
-    labelText: 'Search TerraCare',
+    labelText: 'Search MyTerra',
     icon: Icon(
       Icons.search_outlined,
       color: Colors.white,
