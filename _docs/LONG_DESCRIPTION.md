@@ -24,12 +24,11 @@ Problems Caused by this:
 * The rise of **Global Pollution** due to long **Delivery Distances**
 * Products being bought online when **Local Businesses** may have similar or better alternatives
 * Confusing energy information preventing more **Energy Efficient** products being used
+* The overuse of our **Natural Resources**
 
 > [Back to Contents](#contents)
 
 ## The Solution
-
-> MyTerra's aim is to make saving our environment an easier and more enjoyable experience.
 
 Using **IBM Cloud Services**, the <a href="https://ec.europa.eu/info/energy-climate-change-environment/standards-tools-and-labels/products-labelling-rules-and-requirements/energy-label-and-ecodesign/product-database_en">EPREL DB</a> and **IBM's CI/CD Pipelines**. We have designed a cross-platform application using **Google's Flutter Framework** that suggests more Eco-friendly products when shopping online, providing more local alternatives and Eco-awareness encouragement.
 

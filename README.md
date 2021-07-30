@@ -1,5 +1,7 @@
 # MyTerra | Official Call for Code Global 2021 Submission
 
+> MyTerra's aim is to make saving our environment an easier and more enjoyable experience.
+
 ## Contents
 
 1. [Short Description](#the-short-description)
