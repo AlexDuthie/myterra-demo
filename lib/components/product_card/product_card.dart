@@ -11,7 +11,7 @@ class ProductCard extends StatefulWidget {
 }
 
 class _ProductCardState extends State<ProductCard> {
-  late Future<Product> products;
+  late final products;
 
   List<Category> categories = Categories.getMethodCategories();
   bool _loadingCheck = true;
@@ -21,6 +21,7 @@ class _ProductCardState extends State<ProductCard> {
   void initState() {
     super.initState();
     products = getProducts();
+    print(products);
     Future.delayed(const Duration(milliseconds: 2500), () {
       setState(() {
         _loadingCheck = false;
@@ -43,16 +44,7 @@ class _ProductCardState extends State<ProductCard> {
                     decoration: productCardBoxDecoration,
                     child: Row(
                       children: [
-                        FutureBuilder<Product>(
-                          future: products,
-                          builder: (context, snapshot) {
-                            if (snapshot.hasData) {
-                              return CardImage(imageURL: snapshot.data!.imgName);
-                            } else if (snapshot.hasError) {
-                              return Text('${snapshot.error}');
-                            }
-
-                            return const CircularProgressIndicator();
+                        CardImage(imageURL: );
                           }),
                         SizedBox(width: 5),
                         Column(

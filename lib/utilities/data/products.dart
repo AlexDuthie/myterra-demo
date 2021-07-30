@@ -2,13 +2,19 @@ import 'dart:async';
 import 'dart:convert';
 import 'package:http/http.dart' as http;
 
-Future<Product> getProducts() async {
+getProducts() async {
+  List<Product> productlist = [];
+
   final response = await http.get(Uri.parse('https://f758ae82.eu-gb.apigw.appdomain.cloud/productslist/products'), headers: {
     'accept': "application/json",
   });
 
   if (response.statusCode == 200) {
-    return Product.fromJson(json.decode(response.body));
+    var products = json.decode(response.body);
+    for(int index=0; index<products['entries'].length;index++) {
+      productlist.add(Product.fromJson(products, index));
+    }
+    return productlist;
   } else {
     throw Exception('Failed to load');
   }
@@ -29,15 +35,13 @@ class Product {
     required this.category
   });
 
-  factory Product.fromJson(Map<String, dynamic> json) {
-    print("results:");
-    print(json['entries'][0]['imgName']);
-    return Product(
-      productName: json['entries'][0]['productName'],
-      productDescription: json['entries'][0]['productDescription'],
-      imgName: json['entries'][0]['imgName'],
-      stars: json['entries'][0]['stars'],
-      category: json['entries'][0]['category'],
-    );
+  factory Product.fromJson(Map<String, dynamic> json, index) {
+      return Product(
+        productName: json['entries'][index]['productName'],
+        productDescription: json['entries'][index]['productDescription'],
+        imgName: json['entries'][index]['imgName'],
+        stars: json['entries'][index]['stars'],
+        category: json['entries'][index]['category'],
+      );
   }
 }
