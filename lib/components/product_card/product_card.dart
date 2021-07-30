@@ -11,8 +11,6 @@ class ProductCard extends StatefulWidget {
 }
 
 class _ProductCardState extends State<ProductCard> {
-  late final products;
-
   List<Category> categories = Categories.getMethodCategories();
   bool _loadingCheck = true;
   String rating = 'A';
@@ -20,8 +18,6 @@ class _ProductCardState extends State<ProductCard> {
   @override
   void initState() {
     super.initState();
-    products = getProducts();
-    print(products);
     Future.delayed(const Duration(milliseconds: 2500), () {
       setState(() {
         _loadingCheck = false;
@@ -35,44 +31,65 @@ class _ProductCardState extends State<ProductCard> {
       padding: EdgeInsets.only(top: 10),
       sliver: SliverList(
         delegate: SliverChildBuilderDelegate(
-          (BuildContext context, int index) {
+              (BuildContext context, int index) {
             return _loadingCheck
                 ? LoadingCircle()
                 : Container(
-                    margin: productCardMargin,
-                    height: productCardHeight,
-                    decoration: productCardBoxDecoration,
-                    child: Row(
-                      children: [
-                        CardImage(imageURL: );
-                          }),
-                        SizedBox(width: 5),
-                        Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            CardTitles(),
-                            CardRating(),
-                            SizedBox(height: 4),
-                            CardButton(label: 'add to basket', onPressed: (){
-                              setState(() {
-                                MainAppBar.setBasketCount();
-                              });
-                            },),
-                            CardButton(label: 'compare', onPressed: (){},)
-                          ],
-                        ),
-                        Expanded(
-                          child: Column(
-                            crossAxisAlignment: CrossAxisAlignment.end,
-                            children: [
-                              BulbRating(bulbRating: rating,),
-                              ShareButton(),
-                            ],
-                          ),
-                        )
-                      ],
-                    ),
-                  );
+                margin: productCardMargin,
+                height: productCardHeight,
+                decoration: productCardBoxDecoration,
+                child: Container(
+                    child: FutureBuilder<dynamic>(
+                        future: getProductData(),
+                        builder: (context, snapshot) {
+                          if (snapshot.data == null) {
+                            return Container(
+                              child: LoadingCircle(),
+                            );
+                          } else
+                            return Row(
+                              children: [
+                                CardImage(
+                                    imageURL:
+                                    snapshot.data![index].imgName
+                                ),
+                                SizedBox(width: 5),
+                                Column(
+                                  crossAxisAlignment:
+                                  CrossAxisAlignment.start,
+                                  children: [
+                                    CardTitles(),
+                                    CardRating(),
+                                    SizedBox(height: 4),
+                                    CardButton(
+                                      label: 'add to basket',
+                                      onPressed: () {
+                                        setState(() {
+                                          MainAppBar.setBasketCount();
+                                        });
+                                      },
+                                    ),
+                                    CardButton(
+                                      label: 'compare',
+                                      onPressed: () {},
+                                    )
+                                  ],
+                                ),
+                                Expanded(
+                                  child: Column(
+                                    crossAxisAlignment:
+                                    CrossAxisAlignment.end,
+                                    children: [
+                                      BulbRating(
+                                        bulbRating: rating,
+                                      ),
+                                      ShareButton(),
+                                    ],
+                                  ),
+                                )
+                              ],
+                            );
+                        })));
           },
           childCount: (3),
         ),
