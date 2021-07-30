@@ -11,21 +11,16 @@ class ProductCard extends StatefulWidget {
 }
 
 class _ProductCardState extends State<ProductCard> {
+  late Future<Product> products;
+
   List<Category> categories = Categories.getMethodCategories();
-  List<Product> products = Products.getProducts() as List<Product>;
   bool _loadingCheck = true;
   String rating = 'A';
 
   @override
-  // ignore: must_call_super
   void initState() {
-    getProducts();
-  }
-
-  getProducts() async {
-    Products productClass = Products();
-    await productClass.getProducts();
-    products = productClass.product;
+    super.initState();
+    products = getProducts();
     Future.delayed(const Duration(milliseconds: 2500), () {
       setState(() {
         _loadingCheck = false;
@@ -48,10 +43,17 @@ class _ProductCardState extends State<ProductCard> {
                     decoration: productCardBoxDecoration,
                     child: Row(
                       children: [
-                        CardImage(
-                          imageURL:
-                              'https://images.pexels.com/photos/4112726/pexels-photo-4112726.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260',
-                        ),
+                        FutureBuilder<Product>(
+                          future: products,
+                          builder: (context, snapshot) {
+                            if (snapshot.hasData) {
+                              return CardImage(imageURL: snapshot.data!.imgName);
+                            } else if (snapshot.hasError) {
+                              return Text('${snapshot.error}');
+                            }
+
+                            return const CircularProgressIndicator();
+                          }),
                         SizedBox(width: 5),
                         Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
@@ -80,7 +82,7 @@ class _ProductCardState extends State<ProductCard> {
                     ),
                   );
           },
-          childCount: (products.length),
+          childCount: (3),
         ),
       ),
     );

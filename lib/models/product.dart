@@ -12,4 +12,14 @@ class Product {
     required this.stars,
     required this.category
   });
+
+  factory Product.fromJson(Map<String, dynamic> json) {
+    return Product(
+      productName: json['productName'],
+      productDescription: json['productDescription'],
+      imgName: json['imgName'],
+      stars: json['stars'],
+      category: json['category'],
+    );
+  }
 }
