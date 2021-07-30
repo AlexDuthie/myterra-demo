@@ -3,6 +3,8 @@ import 'package:mobile_app/components/index.dart';
 import 'package:mobile_app/components/appbar/main_appbar.dart';
 import 'package:mobile_app/utilities/constants.dart';
 
+//TODO Implement
+
 class FAQScreen extends StatefulWidget {
   @override
   _FAQScreenState createState() => _FAQScreenState();

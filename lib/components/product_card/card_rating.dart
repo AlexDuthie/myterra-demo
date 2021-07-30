@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:mobile_app/utilities/index.dart';
 
+//TODO Make rating actually Work
+
 List<Icon> stars = [
   Icon(
     Icons.star,

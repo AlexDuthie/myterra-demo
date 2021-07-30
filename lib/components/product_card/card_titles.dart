@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:mobile_app/utilities/index.dart';
 
+//TODO Fix Name and Description sizes and wrapping
+
 class CardTitles extends StatelessWidget {
   CardTitles({required this.title, required this.description});
   final String title, description;

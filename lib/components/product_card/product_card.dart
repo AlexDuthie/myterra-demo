@@ -62,7 +62,7 @@ class _ProductCardState extends State<ProductCard> {
                                   CrossAxisAlignment.start,
                                   children: [
                                     CardTitles(title: snapshot.data![index].productName, description: snapshot.data![index].productDescription),
-                                    CardRating(starsrating: snapshot.data![index].stars),
+                                    CardRating(starsrating: snapshot.data![index].stars), //TODO Make stars work
                                     SizedBox(height: 4),
                                     CardButton(
                                       label: 'add to basket',
@@ -94,7 +94,7 @@ class _ProductCardState extends State<ProductCard> {
                             );
                         })));
           },
-          childCount: (10), //Currently Manually creating list length. In future Update this to do it automatically.
+          childCount: (10), //TODO Currently Manually creating list length. In future Update this to do it automatically.
         ),
       ),
     );
