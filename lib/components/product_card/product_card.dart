@@ -1,8 +1,11 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:mobile_app/utilities/data/products.dart';
 import 'package:mobile_app/models/index.dart';
 import 'package:mobile_app/utilities/index.dart';
 import 'package:mobile_app/components/index.dart';
+
+
 
 class ProductCard extends StatefulWidget {
   @override
@@ -10,18 +13,14 @@ class ProductCard extends StatefulWidget {
 }
 
 class _ProductCardState extends State<ProductCard> {
+  Future<List> products = getProductData();
   List<Category> categories = Categories.getMethodCategories();
-  List<Product> products = Products.getProducts();
   bool _loadingCheck = true;
   String rating = 'A';
 
   @override
-  // ignore: must_call_super
   void initState() {
-    getProducts();
-  }
-
-  getProducts() async {
+    super.initState();
     Future.delayed(const Duration(milliseconds: 2500), () {
       setState(() {
         _loadingCheck = false;
@@ -35,48 +34,67 @@ class _ProductCardState extends State<ProductCard> {
       padding: EdgeInsets.only(top: 10),
       sliver: SliverList(
         delegate: SliverChildBuilderDelegate(
-          (BuildContext context, int index) {
+              (BuildContext context, int index) {
             return _loadingCheck
                 ? LoadingCircle()
                 : Container(
-                    margin: productCardMargin,
-                    height: productCardHeight,
-                    decoration: productCardBoxDecoration,
-                    child: Row(
-                      children: [
-                        CardImage(
-                          imageURL:
-                              'https://images.pexels.com/photos/4112726/pexels-photo-4112726.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260',
-                        ),
-                        SizedBox(width: 5),
-                        Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            CardTitles(),
-                            CardRating(),
-                            SizedBox(height: 4),
-                            CardButton(label: 'add to basket', onPressed: (){
-                              setState(() {
-                                MainAppBar.setBasketCount();
-                              });
-                            },),
-                            CardButton(label: 'compare', onPressed: (){},)
-                          ],
-                        ),
-                        Expanded(
-                          child: Column(
-                            crossAxisAlignment: CrossAxisAlignment.end,
-                            children: [
-                              BulbRating(bulbRating: rating,),
-                              ShareButton(),
-                            ],
-                          ),
-                        )
-                      ],
-                    ),
-                  );
+                margin: productCardMargin,
+                height: productCardHeight,
+                decoration: productCardBoxDecoration,
+                child: Container(
+                    child: FutureBuilder<List>(
+                        future: products,
+                        builder: (context, snapshot) {
+                          if (snapshot.data == null) {
+                            return Container(
+                              child: LoadingCircle(),
+                            );
+                          } else
+                            return Row(
+                              children: [
+                                CardImage(
+                                    imageURL:
+                                    snapshot.data![index].imgName
+                                ),
+                                SizedBox(width: 5),
+                                Column(
+                                  crossAxisAlignment:
+                                  CrossAxisAlignment.start,
+                                  children: [
+                                    CardTitles(title: snapshot.data![index].productName, description: snapshot.data![index].productDescription),
+                                    CardRating(starsrating: snapshot.data![index].stars), //TODO Make stars work
+                                    SizedBox(height: 4),
+                                    CardButton(
+                                      label: 'add to basket',
+                                      onPressed: () {
+                                        setState(() {
+                                          MainAppBar.setBasketCount();
+                                        });
+                                      },
+                                    ),
+                                    CardButton(
+                                      label: 'compare',
+                                      onPressed: () {},
+                                    )
+                                  ],
+                                ),
+                                Expanded(
+                                  child: Column(
+                                    crossAxisAlignment:
+                                    CrossAxisAlignment.end,
+                                    children: [
+                                      BulbRating(
+                                        bulbRating: snapshot.data![index].rating,
+                                      ),
+                                      ShareButton(),
+                                    ],
+                                  ),
+                                )
+                              ],
+                            );
+                        })));
           },
-          childCount: (products.length),
+          childCount: (10), //TODO Currently Manually creating list length. In future Update this to do it automatically.
         ),
       ),
     );

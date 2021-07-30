@@ -3,6 +3,8 @@ import 'package:mobile_app/components/index.dart';
 import 'package:mobile_app/components/appbar/main_appbar.dart';
 import 'package:mobile_app/utilities/constants.dart';
 
+//TODO Implement
+
 class ProfileScreen extends StatefulWidget {
   @override
   _ProfileScreenState createState() => _ProfileScreenState();
@@ -20,11 +22,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
           margin: screensBackground,
           width: backgroundSize,
           height: backgroundSize,
-          child: CustomScrollView(
-            slivers: [
-              ProductCard(),
-            ],
-          ),
+          child: Text("This is the Profile"),
         ),
       ),
     );

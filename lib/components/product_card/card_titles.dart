@@ -1,19 +1,24 @@
 import 'package:flutter/material.dart';
 import 'package:mobile_app/utilities/index.dart';
 
+//TODO Fix Name and Description sizes and wrapping
+
 class CardTitles extends StatelessWidget {
+  CardTitles({required this.title, required this.description});
+  final String title, description;
+
   @override
   Widget build(BuildContext context) {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Text(
-          'Product Name',
+          title,
           style: cardHeaderStyle,
         ),
         SizedBox(height: 2),
         Text(
-          'Company/ Org',
+          description,
           style: cardSubHeaderStyle,
         ),
         SizedBox(height: 2)

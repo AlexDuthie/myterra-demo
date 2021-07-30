@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:mobile_app/utilities/index.dart';
 
+//TODO Make rating actually Work
+
 List<Icon> stars = [
   Icon(
     Icons.star,
@@ -30,6 +32,8 @@ List<Icon> stars = [
 ];
 
 class CardRating extends StatelessWidget {
+  CardRating({required this.starsrating});
+  final String starsrating;
   @override
   Widget build(BuildContext context) {
     return Row(

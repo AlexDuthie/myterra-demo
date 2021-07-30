@@ -8,7 +8,7 @@ class CardImage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return ClipRRect(
+    return ClipRRect( //TODO Fix sizing
       borderRadius: BorderRadius.circular(15),
       child: Image.network(
         imageURL,
