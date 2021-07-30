@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:mobile_app/components/buttons/menu_button.dart';
 import 'package:mobile_app/utilities/index.dart';
 
-class SideAppBar extends StatelessWidget implements PreferredSizeWidget{
+class SideAppBar extends StatelessWidget implements PreferredSizeWidget {
   final Size preferredSize = Size.fromHeight(sideAppBarHeight);
 
   @override
@@ -32,7 +32,11 @@ class SideAppBar extends StatelessWidget implements PreferredSizeWidget{
       ),
       automaticallyImplyLeading: false,
       backgroundColor: sideAppBarColor,
-      actions: [MenuIconButton(onPressed: () {})],
+      actions: [
+        MenuIconButton(
+          onPressed: () => Navigator.of(context).pop(),
+        ),
+      ],
     );
   }
 }
