@@ -5,12 +5,15 @@ import 'package:mobile_app/models/index.dart';
 import 'package:mobile_app/utilities/index.dart';
 import 'package:mobile_app/components/index.dart';
 
+
+
 class ProductCard extends StatefulWidget {
   @override
   _ProductCardState createState() => _ProductCardState();
 }
 
 class _ProductCardState extends State<ProductCard> {
+  Future<List> products = getProductData();
   List<Category> categories = Categories.getMethodCategories();
   bool _loadingCheck = true;
   String rating = 'A';
@@ -39,8 +42,8 @@ class _ProductCardState extends State<ProductCard> {
                 height: productCardHeight,
                 decoration: productCardBoxDecoration,
                 child: Container(
-                    child: FutureBuilder<dynamic>(
-                        future: getProductData(),
+                    child: FutureBuilder<List>(
+                        future: products,
                         builder: (context, snapshot) {
                           if (snapshot.data == null) {
                             return Container(
@@ -58,7 +61,7 @@ class _ProductCardState extends State<ProductCard> {
                                   crossAxisAlignment:
                                   CrossAxisAlignment.start,
                                   children: [
-                                    CardTitles(),
+                                    CardTitles(title: snapshot.data![index].productName, description: snapshot.data![index].productDescription),
                                     CardRating(),
                                     SizedBox(height: 4),
                                     CardButton(
@@ -91,7 +94,7 @@ class _ProductCardState extends State<ProductCard> {
                             );
                         })));
           },
-          childCount: (3),
+          childCount: (3), //Currently Manually creating list length. In future Update this to do it automatically.
         ),
       ),
     );
