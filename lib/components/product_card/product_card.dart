@@ -62,7 +62,7 @@ class _ProductCardState extends State<ProductCard> {
                                   CrossAxisAlignment.start,
                                   children: [
                                     CardTitles(title: snapshot.data![index].productName, description: snapshot.data![index].productDescription),
-                                    CardRating(),
+                                    CardRating(starsrating: snapshot.data![index].stars),
                                     SizedBox(height: 4),
                                     CardButton(
                                       label: 'add to basket',
@@ -84,7 +84,7 @@ class _ProductCardState extends State<ProductCard> {
                                     CrossAxisAlignment.end,
                                     children: [
                                       BulbRating(
-                                        bulbRating: rating,
+                                        bulbRating: snapshot.data![index].rating,
                                       ),
                                       ShareButton(),
                                     ],
@@ -94,7 +94,7 @@ class _ProductCardState extends State<ProductCard> {
                             );
                         })));
           },
-          childCount: (3), //Currently Manually creating list length. In future Update this to do it automatically.
+          childCount: (10), //Currently Manually creating list length. In future Update this to do it automatically.
         ),
       ),
     );

@@ -30,6 +30,8 @@ List<Icon> stars = [
 ];
 
 class CardRating extends StatelessWidget {
+  CardRating({required this.starsrating});
+  final String starsrating;
   @override
   Widget build(BuildContext context) {
     return Row(

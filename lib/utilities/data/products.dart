@@ -15,7 +15,8 @@ Future<List> getProductData() async {
         productDescription: json['productDescription'],
         imgName: json['imgName'],
         stars: json['stars'],
-        category: json['category']
+        category: json['category'],
+        rating: json['rating']
     );
     products.add(product);
   }
