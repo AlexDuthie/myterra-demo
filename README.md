@@ -66,9 +66,9 @@ Click [Here](_docs/LONG_DESCRIPTION.md) to See
 * Start an Android Emulator, see [here](https://docs.expo.io/workflow/android-studio-emulator/) for guidance
 * Run the Application, see [here](https://developer.android.com/training/basics/firstapp/running-app) for guidance
 
-### Web Browser
+### APK
 
-
+See [here](_docs/prototype/) for prototype .apk file
 
 > [Back to Contents](#contents)
 
