@@ -11,6 +11,7 @@
 1. [Video Demonstration](#visual-demonstration)
 1. [Setup](#application-setup)
     1. [Run on PC Emulator](#android-studio-emulator)
+    1. [Installing our APK](#apk)
 1. [Contributors](#contributors)
 
 ## The Short Description
@@ -23,7 +24,7 @@ Encouraging **Eco-Friendly** alternatives, one **Click** at a time.
 
 ## The Long Description
 
-Click [Here](_docs/LONG_DESCRIPTION.md) to See
+Click [Here](_docs/LONG_DESCRIPTION.md) for Long Description
 
 > [Back to Contents](#contents)
 
@@ -41,7 +42,7 @@ Click [Here](_docs/LONG_DESCRIPTION.md) to See
 
 > [Back to Contents](#contents)
 
-## Platform Roadmap Infographic
+## MyTerra Platform Infographic (Roadmap)
 
 ![Infographic Timeline](_docs/infographic.png)
 
@@ -52,6 +53,10 @@ Click [Here](_docs/LONG_DESCRIPTION.md) to See
 [![Video Demo](_docs/thumbnail.png)](https://www.youtube.com/watch?v=vSEEksrnpGY)
 
 > [Back to Contents](#contents)
+
+## MyTerra Prototype Screenshots
+
+![MyTerra Screenshots](_docs/screenshots.png)
 
 ## Application Setup
 
@@ -69,6 +74,11 @@ Click [Here](_docs/LONG_DESCRIPTION.md) to See
 ### APK
 
 See [here](_docs/prototype/) for prototype .apk file
+
+* Download this .apk to your mobile device
+* Locate the .apk in your device's storage
+* Install the .apk
+* The application will now be on your device
 
 > [Back to Contents](#contents)
 
