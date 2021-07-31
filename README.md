@@ -9,6 +9,7 @@
 1. [Project Tools](#project-tools)
 1. [Platform Roadmap](#platform-roadmap-infographic)
 1. [Video Demonstration](#visual-demonstration)
+1. [Screenshots](#screenshots)
 1. [Setup](#application-setup)
     1. [Run on PC Emulator](#android-studio-emulator)
     1. [Installing our APK](#apk)
