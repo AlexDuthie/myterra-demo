@@ -64,7 +64,7 @@ Guide on how to run flutter application
 
 ## Contributors
 
-* **Alex Duthie** | <a href="https://www.linkedin.com/in/alexduthielnkdn/">Linkedin</a>
-* **Andrew Ellen** | <a href="https://github.com/AndrewEllen">GitHub</a>
+* **Alex Duthie** | <a href="https://www.linkedin.com/in/alexduthielnkdn/">Linkedin</a> - <a href="https://github.com/AlexDuthie">GitHub</a>
+* **Andrew Ellen** | <a href="https://www.linkedin.com/in/andrew-ellen-3719361b5/">Linkedin</a> - <a href="https://github.com/AndrewEllen">GitHub</a>
 
 > [Back to Contents](#contents)
