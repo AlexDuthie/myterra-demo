@@ -10,6 +10,7 @@
 1. [Platform Roadmap](#platform-roadmap-infographic)
 1. [Video Demonstration](#visual-demonstration)
 1. [Setup](#application-setup)
+    1. [Run on PC Emulator](#android-studio-emulator)
 1. [Contributors](#contributors)
 
 ## The Short Description
@@ -54,9 +55,20 @@ Click [Here](_docs/LONG_DESCRIPTION.md) to See
 
 ## Application Setup
 
-```
-Guide on how to run flutter application
-```
+### Android Studio Emulator
+
+> See [here](https://www.youtube.com/watch?v=hTk2DojxcEM) for running on an Apple machine
+
+* Install [Flutter](https://flutter.dev/docs/get-started/install)
+* Install [Android Studio](https://developer.android.com/studio)
+* Clone/ Download this Repository
+* Open this Repository inside Android Studio
+* Start an Android Emulator, see [here](https://docs.expo.io/workflow/android-studio-emulator/) for guidance
+* Run the Application, see [here](https://developer.android.com/training/basics/firstapp/running-app) for guidance
+
+### Web Browser
+
+
 
 > [Back to Contents](#contents)
 
