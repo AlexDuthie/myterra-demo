@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:mobile_app/screens/index.dart';
+import 'package:MyTerra/screens/index.dart';
 
 class Routes {
   final routes = <String, WidgetBuilder>{

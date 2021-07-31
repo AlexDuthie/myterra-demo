@@ -1,9 +1,9 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:mobile_app/utilities/data/products.dart';
-import 'package:mobile_app/models/index.dart';
-import 'package:mobile_app/utilities/index.dart';
-import 'package:mobile_app/components/index.dart';
+import 'package:MyTerra/utilities/data/products.dart';
+import 'package:MyTerra/models/index.dart';
+import 'package:MyTerra/utilities/index.dart';
+import 'package:MyTerra/components/index.dart';
 
 
 

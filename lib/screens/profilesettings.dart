@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:mobile_app/components/index.dart';
-import 'package:mobile_app/components/appbar/main_appbar.dart';
-import 'package:mobile_app/utilities/constants.dart';
+import 'package:MyTerra/components/index.dart';
+import 'package:MyTerra/components/appbar/main_appbar.dart';
+import 'package:MyTerra/utilities/constants.dart';
 
 //TODO Implement
 

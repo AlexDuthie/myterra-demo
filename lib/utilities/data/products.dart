@@ -1,6 +1,6 @@
 import 'dart:convert';
 import 'package:http/http.dart' as http;
-import 'package:mobile_app/models/product.dart';
+import 'package:MyTerra/models/product.dart';
 
 Future<List> getProductData() async {
   var response = await http.get(Uri.https('f758ae82.eu-gb.apigw.appdomain.cloud','productslist/products'),

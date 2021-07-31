@@ -1,3 +1,3 @@
-import 'package:mobile_app/router/index.dart';
+import 'package:MyTerra/router/index.dart';
 
 void main() => new Routes();

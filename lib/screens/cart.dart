@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:mobile_app/components/index.dart';
+import 'package:MyTerra/components/index.dart';
 
 //TODO: Design UI for this screen
 

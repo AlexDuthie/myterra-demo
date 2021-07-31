@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:mobile_app/utilities/constants.dart';
+import 'package:MyTerra/utilities/constants.dart';
 
 // ignore: must_be_immutable
 class Basket extends StatefulWidget {

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:mobile_app/utilities/index.dart';
+import 'package:MyTerra/utilities/index.dart';
 
 //TODO Make rating actually Work
 

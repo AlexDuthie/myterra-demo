@@ -1,6 +1,6 @@
 import "package:flutter/material.dart";
-import 'package:mobile_app/components/index.dart';
-import 'package:mobile_app/utilities/constants.dart';
+import 'package:MyTerra/components/index.dart';
+import 'package:MyTerra/utilities/constants.dart';
 
 class SideBarMenu extends StatelessWidget {
   SideBarMenu({required this.containerTitle, required this.sideBarText});

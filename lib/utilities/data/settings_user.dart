@@ -1,4 +1,4 @@
-import 'package:mobile_app/models/sidebar.dart';
+import 'package:MyTerra/models/sidebar.dart';
 
 class SideBarUser {
   static List<SideBarText> getUserSettings() {

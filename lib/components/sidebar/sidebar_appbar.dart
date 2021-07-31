@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:mobile_app/components/buttons/menu_button.dart';
-import 'package:mobile_app/utilities/index.dart';
+import 'package:MyTerra/components/buttons/menu_button.dart';
+import 'package:MyTerra/utilities/index.dart';
 
 class SideAppBar extends StatelessWidget implements PreferredSizeWidget {
   final Size preferredSize = Size.fromHeight(sideAppBarHeight);

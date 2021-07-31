@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:mobile_app/models/category.dart';
+import 'package:MyTerra/models/category.dart';
 
 class Categories {
   static List<Category> getMethodCategories() {
