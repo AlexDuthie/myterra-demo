@@ -30,7 +30,7 @@ Problems Caused by this:
 
 ## The Solution
 
-Using **IBM Cloud Services**, the <a href="https://ec.europa.eu/info/energy-climate-change-environment/standards-tools-and-labels/products-labelling-rules-and-requirements/energy-label-and-ecodesign/product-database_en">EPREL DB</a> and **IBM's CI/CD Pipelines**. We have designed a cross-platform application using **Google's Flutter Framework** that suggests more Eco-friendly products when shopping online, providing more local alternatives and Eco-awareness encouragement.
+Using **IBM Cloud Services** and **IBM's CI/CD Pipelines**. We have designed a cross-platform application using **Google's Flutter Framework** that suggests more Eco-friendly products when shopping online, providing more local alternatives and Eco-awareness encouragement. We hope to connect MyTerra up to the <a href="https://ec.europa.eu/info/energy-climate-change-environment/standards-tools-and-labels/products-labelling-rules-and-requirements/energy-label-and-ecodesign/product-database_en">EPREL DB</a> due to release later this year to gain organised, real data on products sold around Europe.
 
 > Shopping locally can not only just help your fellow neighbours business but also help save our planet's natural resources.
 
@@ -62,13 +62,13 @@ In collaboration with **Google's Flutter Framework**, **EPREL** and countless **
 
 ### Scalability
 
-**Google's Flutter** allows us to deploy our application to **Android**, **Windows** and **iOS** in 1/2 the development time. MyTerra's comparison system could also be used within a browser extension too by comparing products when browsing online.
+**Google's Flutter** allows us to deploy our application to **Android**, **iOS**, **Windows** and Chromium in a vastly reduced development time. MyTerra's comparison system could also be used within a browser extension too by comparing products when browsing online.
 
 > [Back to Contents](#contents)
 
 ### Goal
 
-The main goal is to simplify the understanding of energy consumption rates AND to encourage Eco-awareness by making it **fun**.
+The main goal is to simplify the understanding of energy consumption rates AND to encourage Eco-awareness by making it **rewarding and entertaining**.
 
 **EPREL** is going to be a huge database that stores energy consumption rates from products all across Europe. We believe that we could achieve a similar approach by using **IBM's Db2** and other **IBM services**. The same data could be stored in time, but on a larger scale.
 
@@ -76,7 +76,7 @@ The main goal is to simplify the understanding of energy consumption rates AND t
 
 ## Contributors
 
-* **Alex Duthie** | <a href="https://www.linkedin.com/in/alexduthielnkdn/">Linkedin</a>
-* **Andrew Ellen** | <a href="https://github.com/AndrewEllen">GitHub</a>
+* **Alex Duthie** | <a href="https://www.linkedin.com/in/alexduthielnkdn/">Linkedin</a> <a href="https://github.com/AlexDuthie">GitHub</a>
+* **Andrew Ellen** | <a href="https://www.linkedin.com/in/andrew-ellen-3719361b5/">Linkedin</a> <a href="https://github.com/AndrewEllen">GitHub</a>
 
 > [Back to Contents](#contents)
